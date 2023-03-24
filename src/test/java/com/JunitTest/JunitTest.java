@@ -21,4 +21,9 @@ class JunitTest {
         boolean output = runner.validEmail("abhishek.magdum.07@gmail.com");
         assertEquals(true,output);
     }
+    @Test
+    void phoneNumber(){
+        boolean output = runner.phoneNumber("+91 7066987376");
+        assertEquals(true,output);
+    }
 }
