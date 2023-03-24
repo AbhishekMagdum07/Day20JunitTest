@@ -11,4 +11,9 @@ class JunitTest {
         boolean output = runner.firstName("Abhishek");
         assertEquals(true,output);
     }
+    @Test
+    void lastName(){
+        boolean output = runner.lastName("Magdum");
+        assertEquals(true,output);
+    }
 }
