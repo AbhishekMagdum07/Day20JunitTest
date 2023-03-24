@@ -17,5 +17,12 @@ public class Junit {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.find();
     }
+    // Uc3 = As a User need to enter a valid email
+    //E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) wit precise @ and . positions
+    public boolean validEmail(String email){
+        Pattern pattern = Pattern.compile("^[a-z][a-z0-9-.+]*@[a-z0-9]*[.][a-z.]*$");
+        Matcher matcher = pattern.matcher(email);
+        return matcher.find();
+    }
 
 }

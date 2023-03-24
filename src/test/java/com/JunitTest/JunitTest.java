@@ -16,4 +16,9 @@ class JunitTest {
         boolean output = runner.lastName("Magdum");
         assertEquals(true,output);
     }
+    @Test
+    void validEmail(){
+        boolean output = runner.validEmail("abhishek.magdum.07@gmail.com");
+        assertEquals(true,output);
+    }
 }
