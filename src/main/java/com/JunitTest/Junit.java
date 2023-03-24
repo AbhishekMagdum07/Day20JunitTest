@@ -33,4 +33,10 @@ public class Junit {
         Matcher matcher = pattern.matcher(phoneNumber);
         return matcher.find();
     }
+    public boolean password(String password){
+        Pattern pattern = Pattern.compile("(?=.*[A-Z])(?=.*[\\d])(?=.*[\\W])[\\w\\W]{8,}");
+        Matcher matcher = pattern.matcher(password);
+        return matcher.find();
+
+    }
 }

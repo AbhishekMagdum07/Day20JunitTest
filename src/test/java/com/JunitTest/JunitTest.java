@@ -26,4 +26,9 @@ class JunitTest {
         boolean output = runner.phoneNumber("+91 7066987376");
         assertEquals(true,output);
     }
+    @Test
+    void password(){
+        boolean output = runner.password("Abhi@1234");
+        assertEquals(true,output);
+    }
 }
