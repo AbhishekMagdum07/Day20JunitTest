@@ -7,10 +7,15 @@ public class Junit {
 
     // Uc1 = As a User need to enter a valid First Name = First name starts with Cap and has minimum 3 characters
     public boolean firstName(String  name) {
-
         Pattern pattern = Pattern.compile("^[A-Z][a-zA-Z]{2,}$");
-
         Matcher matcher = pattern.matcher(name);
         return matcher.find();
     }
+    // Uc2 = As a User need to enter a valid Last Name = Last name starts with Cap and has minimum 3 characters
+    public boolean  lastName(String lastName) {
+        Pattern pattern = Pattern.compile("^[A-Z][a-zA-Z]{2,}$");
+        Matcher matcher = pattern.matcher(lastName);
+        return matcher.find();
+    }
+
 }
